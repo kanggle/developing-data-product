@@ -1,0 +1,23 @@
+---
+title: "text20200523"
+author: "kanggle"
+date: "5/23/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Slide with R Output
+
+```{r, echo = TRUE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=26.06912, lng=119.18677, popup="new") %>%
+  addMarkers(lat=26.06922, lng=119.3000, popup="old") 
+my_map
+```
+
